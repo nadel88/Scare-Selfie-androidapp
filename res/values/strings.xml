@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScareSelfie</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="instructions">All you need to do is click this picture and the front facing camera will appear . wait for the victim to press the capture button and watch his reaction!!!</string>
+    <string name="title_activity_scary_picture">ScaryPicture</string>
+    <string name="scary_pic">Ahhhhh!!!!!  ;)</string>
+    <string name="title_activity_take_victims_picture">TakeVictimsPicture</string>
+    <string name="title_activity_custom_camera">CustomCameraActivity</string>
+    <string name="title_activity_camera_view">CameraViewActivity</string>
+    <string name="title_activity_camera_view_scary_pic">CameraViewScaryPic</string>
+    <string name="title_activity_hidden_picture_mode">HiddenPictureMode</string>
+    <string name="title_activity_hidden_picture">HiddenPicture</string>
+
+</resources>

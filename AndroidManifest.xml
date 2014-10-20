@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nadav.eliyahu.proj.scareselfie"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ScareSelfie"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        <service
+            android:name="com.nadav.eliyahu.proj.scareselfie.BackgroundService"
+            android:exported="false" />
+        <service
+            android:name="com.nadav.eliyahu.proj.scareselfie.CameraReceiver"
+            android:exported="false" />
+        -->
+
+        <activity
+            android:name=".ScaryPicture"
+            android:label="@string/title_activity_scary_picture" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.nadav.eliyahu.proj.scareselfie.TakeVictimsPicture"
+            android:label="@string/title_activity_take_victims_picture" >
+        </activity>
+        -->
+
+
+        <!--
+        <receiver
+            android:name="com.nadav.eliyahu.proj.scareselfie.CameraReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+                <action android:name="com.android.camera.NEW_PICTURE" />
+                <action android:name="android.hardware.action.NEW_PICTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity
+            android:name=".CameraViewActivity"
+            android:label="@string/title_activity_camera_view"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>
